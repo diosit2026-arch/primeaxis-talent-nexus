@@ -15,6 +15,10 @@ import {
   HeartPulse,
   ShoppingBag,
   Plane,
+  Truck,
+  GraduationCap,
+  Building,
+  Globe2,
 } from "lucide-react";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
@@ -51,7 +55,7 @@ const seoHighlights = [
   "Recruitment and staffing solutions for IT and non-IT businesses",
   "Payroll management and HR compliance support for growing teams",
   "Executive search and leadership hiring for critical roles",
-  "Customized HR consulting for onboarding, retention, and workforce planning",
+  "Customized HR consulting for onboarding, retention, workforce planning, and international hiring support",
 ];
 
 const audienceContent = [
@@ -60,15 +64,15 @@ const audienceContent = [
     points: [
       "Find qualified candidates faster for leadership, technical, operational, and support roles.",
       "Reduce hiring delays with structured screening, shortlisting, interview coordination, and onboarding support.",
-      "Strengthen workforce planning with staffing, payroll, compliance, and HR advisory services in one place.",
+      "Strengthen workforce planning with domestic staffing, overseas recruitment support, payroll, compliance, and HR advisory services in one place.",
     ],
   },
   {
     title: "For Candidates",
     points: [
       "Get access to career opportunities with trusted employers across multiple industries.",
-      "Receive guidance on suitable roles, hiring expectations, and interview readiness.",
-      "Work with a recruitment partner that values long-term fit, growth potential, and professional success.",
+      "Receive guidance on suitable roles, domestic job openings, overseas opportunities, and interview readiness.",
+      "Work with a recruitment partner that values long-term fit, growth potential, professional success, and international mobility.",
     ],
   },
 ];
@@ -81,6 +85,10 @@ const sectorIcons = {
   hospitals: HeartPulse,
   retailers: ShoppingBag,
   aviation: Plane,
+  logistics: Truck,
+  education: GraduationCap,
+  "real-estate": Building,
+  gulf: Globe2,
 };
 
 type PartnerCompany = {
@@ -135,7 +143,7 @@ const Index = () => {
               <span className="block text-gradient-gold mt-2">Shape The Future</span>
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/70 max-w-3xl mb-10 leading-relaxed">
-              Primeaxis HR Solutions delivers recruitment, staffing, payroll, and HR consulting services that help businesses in Chennai and across India hire exceptional talent with speed and confidence.
+              Primeaxis HR Solutions delivers domestic hiring, overseas recruitment support, staffing, payroll, and HR consulting services that help businesses in Chennai, across India, and in global markets hire exceptional talent with speed and confidence.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -180,7 +188,7 @@ const Index = () => {
                 End-to-End HR Solutions
               </h2>
               <p className="text-muted-foreground text-lg mt-5 leading-relaxed">
-                From talent acquisition and executive search to payroll administration and HR advisory, we provide practical workforce solutions tailored to each stage of business growth.
+                From domestic talent acquisition and executive search to overseas hiring support, payroll administration, and HR advisory, we provide practical workforce solutions tailored to each stage of business growth.
               </p>
               <div className="gold-line w-16 mx-auto mt-4" />
             </div>
@@ -213,7 +221,7 @@ const Index = () => {
                   <span className="text-gradient-gold block mt-2">Sustainable Growth</span>
                 </h2>
                 <p className="text-muted-foreground text-lg mt-6 leading-relaxed">
-                  Businesses rely on Primeaxis for fast hiring, better candidate quality, smoother onboarding, and dependable compliance support. Our team works closely with employers to reduce hiring delays, improve retention, and build efficient people operations.
+                  Businesses rely on Primeaxis for fast domestic hiring, better candidate quality, smoother onboarding, dependable compliance support, and cross-border recruitment coordination. Our team works closely with employers to reduce hiring delays, improve retention, and build efficient people operations.
                 </p>
               </div>
               <div className="space-y-4">
@@ -239,7 +247,7 @@ const Index = () => {
                 <span className="text-gradient-gold block mt-2">And Candidates</span>
               </h2>
               <p className="text-muted-foreground text-lg mt-5 leading-relaxed">
-                Primeaxis creates value on both sides of the hiring journey by helping employers build reliable teams and helping candidates connect with meaningful career opportunities.
+                Primeaxis creates value on both sides of the hiring journey by helping employers build reliable teams through domestic and overseas recruitment, and by helping candidates connect with meaningful local and international career opportunities.
               </p>
               <div className="gold-line w-16 mx-auto mt-4" />
             </div>
@@ -275,7 +283,7 @@ const Index = () => {
                 <span className="text-gradient-gold block">Recruitment Partner</span>
               </h2>
               <p className="text-primary-foreground/70 text-lg leading-relaxed mb-8">
-                With 5+ years of experience, we support employers with executive hiring, permanent staffing, contract workforce planning, payroll coordination, and HR process improvement. Our process is transparent, efficient, and built around measurable hiring outcomes.
+                With 5+ years of experience, we support employers with executive hiring, permanent staffing, domestic recruitment campaigns, overseas workforce sourcing, payroll coordination, and HR process improvement. Our process is transparent, efficient, and built around measurable hiring outcomes.
               </p>
               <Link
                 to="/about"
@@ -315,7 +323,7 @@ const Index = () => {
                 Trusted Across Every Major Industry
               </h2>
               <p className="text-muted-foreground text-lg mt-5 leading-relaxed">
-                We support hiring across IT, non-IT enterprises, manufacturing, oil and gas, hospitals, retail, and aviation with strong partner relationships.
+                We support domestic and overseas hiring across IT, non-IT enterprises, manufacturing, oil and gas, hospitals, retail, aviation, and other international sectors with strong partner relationships.
               </p>
               <div className="gold-line w-16 mx-auto mt-4" />
             </div>
@@ -386,7 +394,7 @@ const Index = () => {
                   <span className="text-gradient-gold block mt-2">Dream Team?</span>
                 </h2>
                 <p className="text-primary-foreground/70 text-lg max-w-xl mx-auto mb-8">
-                  Let's discuss your hiring goals, role requirements, and workforce challenges. Our HR specialists are ready to deliver recruitment and staffing solutions that move your business forward.
+                  Let's discuss your hiring goals, role requirements, and workforce challenges. Our HR specialists are ready to deliver domestic and overseas recruitment solutions that move your business forward.
                 </p>
                 <Link
                   to="/contact"

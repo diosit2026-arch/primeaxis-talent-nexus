@@ -2,7 +2,7 @@
   "meta": {
     "version": 1,
     "generatedFor": "Primeaxis partner companies dataset",
-    "currentCompanyCount": 105,
+    "currentCompanyCount": 177,
     "targetSizeOptions": [
       100,
       500,
@@ -162,6 +162,36 @@
             "url": null,
             "alt": "Zoho logo"
           }
+        },
+        {
+          "name": "SAP",
+          "slug": "sap",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "SAP logo"
+          },
+          "domain": "sap.com"
+        },
+        {
+          "name": "Salesforce",
+          "slug": "salesforce",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Salesforce logo"
+          },
+          "domain": "salesforce.com"
+        },
+        {
+          "name": "Adobe",
+          "slug": "adobe",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Adobe logo"
+          },
+          "domain": "adobe.com"
         }
       ]
     },
@@ -311,6 +341,36 @@
             "url": null,
             "alt": "Bharti Enterprises logo"
           }
+        },
+        {
+          "name": "HSBC",
+          "slug": "hsbc",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "HSBC logo"
+          },
+          "domain": "hsbc.com"
+        },
+        {
+          "name": "Standard Chartered",
+          "slug": "standard-chartered",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Standard Chartered logo"
+          },
+          "domain": "sc.com"
+        },
+        {
+          "name": "Unilever",
+          "slug": "unilever",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Unilever logo"
+          },
+          "domain": "unilever.com"
         }
       ]
     },
@@ -460,6 +520,36 @@
             "url": null,
             "alt": "3M logo"
           }
+        },
+        {
+          "name": "Honeywell",
+          "slug": "honeywell",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Honeywell logo"
+          },
+          "domain": "honeywell.com"
+        },
+        {
+          "name": "Mitsubishi Electric",
+          "slug": "mitsubishi-electric",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Mitsubishi Electric logo"
+          },
+          "domain": "mitsubishielectric.com"
+        },
+        {
+          "name": "Caterpillar Global",
+          "slug": "caterpillar-global",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Caterpillar Global logo"
+          },
+          "domain": "cat.com"
         }
       ]
     },
@@ -609,6 +699,36 @@
             "url": null,
             "alt": "GAIL logo"
           }
+        },
+        {
+          "name": "ENI",
+          "slug": "eni",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "ENI logo"
+          },
+          "domain": "eni.com"
+        },
+        {
+          "name": "Equinor",
+          "slug": "equinor",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Equinor logo"
+          },
+          "domain": "equinor.com"
+        },
+        {
+          "name": "Petronas",
+          "slug": "petronas",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Petronas logo"
+          },
+          "domain": "petronas.com"
         }
       ]
     },
@@ -758,6 +878,36 @@
             "url": null,
             "alt": "Continental Hospitals logo"
           }
+        },
+        {
+          "name": "Cleveland Clinic",
+          "slug": "cleveland-clinic",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Cleveland Clinic logo"
+          },
+          "domain": "clevelandclinic.org"
+        },
+        {
+          "name": "Mayo Clinic",
+          "slug": "mayo-clinic",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Mayo Clinic logo"
+          },
+          "domain": "mayoclinic.org"
+        },
+        {
+          "name": "King Faisal Specialist Hospital",
+          "slug": "king-faisal-specialist-hospital",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "King Faisal Specialist Hospital logo"
+          },
+          "domain": "kfshrc.edu.sa"
         }
       ]
     },
@@ -907,6 +1057,36 @@
             "url": null,
             "alt": "Amazon logo"
           }
+        },
+        {
+          "name": "Walmart",
+          "slug": "walmart",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Walmart logo"
+          },
+          "domain": "walmart.com"
+        },
+        {
+          "name": "Carrefour",
+          "slug": "carrefour",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Carrefour logo"
+          },
+          "domain": "carrefour.com"
+        },
+        {
+          "name": "IKEA",
+          "slug": "ikea",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "IKEA logo"
+          },
+          "domain": "ikea.com"
         }
       ]
     },
@@ -1056,6 +1236,570 @@
             "url": null,
             "alt": "American Airlines logo"
           }
+        },
+        {
+          "name": "Qantas",
+          "slug": "qantas",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Qantas logo"
+          },
+          "domain": "qantas.com"
+        },
+        {
+          "name": "Turkish Airlines",
+          "slug": "turkish-airlines",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Turkish Airlines logo"
+          },
+          "domain": "turkishairlines.com"
+        },
+        {
+          "name": "KLM",
+          "slug": "klm",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "KLM logo"
+          },
+          "domain": "klm.com"
+        }
+      ]
+    },
+    {
+      "id": "logistics",
+      "title": "Logistics and Supply Chain",
+      "companies": [
+        {
+          "name": "Blue Dart",
+          "slug": "blue-dart",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Blue Dart logo"
+          },
+          "domain": "bluedart.com"
+        },
+        {
+          "name": "Delhivery",
+          "slug": "delhivery",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Delhivery logo"
+          },
+          "domain": "delhivery.com"
+        },
+        {
+          "name": "DHL",
+          "slug": "dhl",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "DHL logo"
+          },
+          "domain": "dhl.com"
+        },
+        {
+          "name": "FedEx",
+          "slug": "fedex",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "FedEx logo"
+          },
+          "domain": "fedex.com"
+        },
+        {
+          "name": "Maersk",
+          "slug": "maersk",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Maersk logo"
+          },
+          "domain": "maersk.com"
+        },
+        {
+          "name": "DP World",
+          "slug": "dp-world",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "DP World logo"
+          },
+          "domain": "dpworld.com"
+        },
+        {
+          "name": "Safexpress",
+          "slug": "safexpress",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Safexpress logo"
+          },
+          "domain": "safexpress.com"
+        },
+        {
+          "name": "Gati",
+          "slug": "gati",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Gati logo"
+          },
+          "domain": "gati.com"
+        },
+        {
+          "name": "Aramex",
+          "slug": "aramex",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Aramex logo"
+          },
+          "domain": "aramex.com"
+        },
+        {
+          "name": "UPS",
+          "slug": "ups",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "UPS logo"
+          },
+          "domain": "ups.com"
+        },
+        {
+          "name": "Kuehne+Nagel",
+          "slug": "kuehne-nagel",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Kuehne+Nagel logo"
+          },
+          "domain": "kuehne-nagel.com"
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Education and EdTech",
+      "companies": [
+        {
+          "name": "BYJU'S",
+          "slug": "byjus",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "BYJU'S logo"
+          },
+          "domain": "byjus.com"
+        },
+        {
+          "name": "Unacademy",
+          "slug": "unacademy",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Unacademy logo"
+          },
+          "domain": "unacademy.com"
+        },
+        {
+          "name": "Vedantu",
+          "slug": "vedantu",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Vedantu logo"
+          },
+          "domain": "vedantu.com"
+        },
+        {
+          "name": "upGrad",
+          "slug": "upgrad",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "upGrad logo"
+          },
+          "domain": "upgrad.com"
+        },
+        {
+          "name": "Great Learning",
+          "slug": "great-learning",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Great Learning logo"
+          },
+          "domain": "greatlearning.in"
+        },
+        {
+          "name": "PhysicsWallah",
+          "slug": "physics-wallah",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "PhysicsWallah logo"
+          },
+          "domain": "pw.live"
+        },
+        {
+          "name": "SASTRA University",
+          "slug": "sastra-university",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "SASTRA University logo"
+          },
+          "domain": "sastra.edu"
+        },
+        {
+          "name": "VIT",
+          "slug": "vit",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "VIT logo"
+          },
+          "domain": "vit.ac.in"
+        },
+        {
+          "name": "Coursera",
+          "slug": "coursera",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Coursera logo"
+          },
+          "domain": "coursera.org"
+        },
+        {
+          "name": "Udemy",
+          "slug": "udemy",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Udemy logo"
+          },
+          "domain": "udemy.com"
+        },
+        {
+          "name": "Pearson",
+          "slug": "pearson",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Pearson logo"
+          },
+          "domain": "pearson.com"
+        }
+      ]
+    },
+    {
+      "id": "real-estate",
+      "title": "Real Estate and Infrastructure",
+      "companies": [
+        {
+          "name": "DLF",
+          "slug": "dlf",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "DLF logo"
+          },
+          "domain": "dlf.in"
+        },
+        {
+          "name": "Prestige Group",
+          "slug": "prestige-group",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Prestige Group logo"
+          },
+          "domain": "prestigeconstructions.com"
+        },
+        {
+          "name": "Brigade Group",
+          "slug": "brigade-group",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Brigade Group logo"
+          },
+          "domain": "brigadegroup.com"
+        },
+        {
+          "name": "Sobha",
+          "slug": "sobha",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Sobha logo"
+          },
+          "domain": "sobha.com"
+        },
+        {
+          "name": "Godrej Properties",
+          "slug": "godrej-properties",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Godrej Properties logo"
+          },
+          "domain": "godrejproperties.com"
+        },
+        {
+          "name": "Lodha",
+          "slug": "lodha",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Lodha logo"
+          },
+          "domain": "lodhagroup.com"
+        },
+        {
+          "name": "Shapoorji Pallonji Real Estate",
+          "slug": "shapoorji-pallonji-real-estate",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Shapoorji Pallonji Real Estate logo"
+          },
+          "domain": "shapoorjirealestate.com"
+        },
+        {
+          "name": "Oberoi Realty",
+          "slug": "oberoi-realty",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Oberoi Realty logo"
+          },
+          "domain": "oberoirealty.com"
+        },
+        {
+          "name": "CBRE",
+          "slug": "cbre",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "CBRE logo"
+          },
+          "domain": "cbre.com"
+        },
+        {
+          "name": "JLL",
+          "slug": "jll",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "JLL logo"
+          },
+          "domain": "jll.com"
+        },
+        {
+          "name": "Nakheel",
+          "slug": "nakheel",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Nakheel logo"
+          },
+          "domain": "nakheel.com"
+        }
+      ]
+    },
+    {
+      "id": "gulf",
+      "title": "Gulf Countries Companies",
+      "companies": [
+        {
+          "name": "Saudi Aramco",
+          "slug": "saudi-aramco",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Saudi Aramco logo"
+          },
+          "domain": "aramco.com"
+        },
+        {
+          "name": "Emirates NBD",
+          "slug": "emirates-nbd",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Emirates NBD logo"
+          },
+          "domain": "emiratesnbd.com"
+        },
+        {
+          "name": "Dubai Islamic Bank",
+          "slug": "dubai-islamic-bank",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Dubai Islamic Bank logo"
+          },
+          "domain": "dib.ae"
+        },
+        {
+          "name": "QatarEnergy",
+          "slug": "qatarenergy",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "QatarEnergy logo"
+          },
+          "domain": "qatarenergy.qa"
+        },
+        {
+          "name": "Qatar National Bank",
+          "slug": "qatar-national-bank",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Qatar National Bank logo"
+          },
+          "domain": "qnb.com"
+        },
+        {
+          "name": "Kuwait Petroleum Corporation",
+          "slug": "kuwait-petroleum-corporation",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Kuwait Petroleum Corporation logo"
+          },
+          "domain": "kpc.com.kw"
+        },
+        {
+          "name": "Ooredoo",
+          "slug": "ooredoo",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Ooredoo logo"
+          },
+          "domain": "ooredoo.com"
+        },
+        {
+          "name": "STC",
+          "slug": "stc",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "STC logo"
+          },
+          "domain": "stc.com.sa"
+        },
+        {
+          "name": "ADNOC",
+          "slug": "adnoc",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "ADNOC logo"
+          },
+          "domain": "adnoc.ae"
+        },
+        {
+          "name": "Etisalat",
+          "slug": "etisalat",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Etisalat logo"
+          },
+          "domain": "eand.com"
+        },
+        {
+          "name": "Almarai",
+          "slug": "almarai",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Almarai logo"
+          },
+          "domain": "almarai.com"
+        },
+        {
+          "name": "Majid Al Futtaim",
+          "slug": "majid-al-futtaim",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Majid Al Futtaim logo"
+          },
+          "domain": "majidalfuttaim.com"
+        },
+        {
+          "name": "DP World UAE",
+          "slug": "dp-world-uae",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "DP World UAE logo"
+          },
+          "domain": "dpworld.com"
+        },
+        {
+          "name": "Jumeirah Group",
+          "slug": "jumeirah-group",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Jumeirah Group logo"
+          },
+          "domain": "jumeirah.com"
+        },
+        {
+          "name": "Emaar Properties",
+          "slug": "emaar-properties",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Emaar Properties logo"
+          },
+          "domain": "emaar.com"
+        },
+        {
+          "name": "DAMAC Properties",
+          "slug": "damac-properties",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "DAMAC Properties logo"
+          },
+          "domain": "damacproperties.com"
+        },
+        {
+          "name": "Saudi National Bank",
+          "slug": "saudi-national-bank",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Saudi National Bank logo"
+          },
+          "domain": "alahli.com"
+        },
+        {
+          "name": "Mubadala",
+          "slug": "mubadala",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Mubadala logo"
+          },
+          "domain": "mubadala.com"
         }
       ]
     }

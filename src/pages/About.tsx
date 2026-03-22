@@ -38,7 +38,7 @@ const About = () => {
               <span className="text-gradient-gold block mt-2">We Build Futures.</span>
             </h1>
             <p className="text-lg text-primary-foreground/70 mt-6 max-w-xl leading-relaxed">
-              Since November 24, 2021, Primeaxis has been helping businesses strengthen hiring, payroll, compliance, and workforce planning through dependable HR solutions and recruitment expertise.
+              Since November 24, 2021, Primeaxis has been helping businesses strengthen domestic hiring, overseas recruitment, payroll, compliance, and workforce planning through dependable HR solutions and recruitment expertise.
             </p>
           </motion.div>
         </div>
@@ -77,7 +77,7 @@ const About = () => {
                 We believe the right people in the right roles can transform entire organizations. Our mission is to make that connection swiftly, accurately, and with unwavering commitment to excellence.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Every candidate we present is assessed by experienced recruiters who understand role complexity, team fit, business context, and operational priorities. We go beyond keyword matching to deliver stronger hiring outcomes.
+                Every candidate we present is assessed by experienced recruiters who understand role complexity, team fit, business context, operational priorities, and regional hiring requirements. We go beyond keyword matching to deliver stronger hiring outcomes for both domestic and overseas mandates.
               </p>
             </Reveal>
             <Reveal direction="right">
@@ -108,10 +108,10 @@ const About = () => {
               </div>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Primeaxis partners with employers that need reliable support for permanent staffing, executive search, contract hiring, payroll coordination, HR consulting, compliance processes, and employee onboarding.
+                  Primeaxis partners with employers that need reliable support for permanent staffing, executive search, contract hiring, domestic hiring drives, overseas workforce sourcing, payroll coordination, HR consulting, compliance processes, and employee onboarding.
                 </p>
                 <p>
-                  From Chennai to broader regional hiring mandates, we help organizations improve talent acquisition quality, reduce hiring delays, and create people processes that can scale with business growth.
+                  From Chennai to broader regional and international hiring mandates, we help organizations improve talent acquisition quality, reduce hiring delays, and create people processes that can scale with business growth.
                 </p>
               </div>
             </div>

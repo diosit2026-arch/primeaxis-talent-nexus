@@ -12,7 +12,7 @@ const Footer = () => {
               <img
                 src={primeaxisLogo}
                 alt="Primeaxis logo"
-                className="h-16 md:h-20 w-auto object-contain"
+                className="h-24 md:h-28 w-auto object-contain"
               />
             </div>
             <p className="text-primary-foreground/60 text-sm leading-relaxed">

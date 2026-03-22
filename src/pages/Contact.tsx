@@ -51,7 +51,7 @@ const Contact = () => {
               <span className="text-gradient-gold block mt-2">Conversation</span>
             </h1>
             <p className="text-lg text-primary-foreground/70 mt-6 max-w-xl leading-relaxed">
-              Whether you need permanent staffing, executive hiring, payroll support, or end-to-end HR solutions, our Chennai team is ready to help your business hire with confidence.
+              Whether you need permanent staffing, executive hiring, domestic recruitment, overseas hiring support, payroll support, or end-to-end HR solutions, our Chennai team is ready to help your business hire with confidence.
             </p>
           </motion.div>
         </div>
@@ -84,7 +84,7 @@ const Contact = () => {
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">Send Us a Message</h2>
               <p className="text-muted-foreground mt-4 max-w-2xl mx-auto leading-relaxed">
-                Speak with Primeaxis HR Solutions about recruitment process outsourcing, contract staffing, payroll administration, HR consulting, onboarding support, and customized workforce solutions for growing teams.
+                Speak with Primeaxis HR Solutions about recruitment process outsourcing, contract staffing, domestic hiring, overseas recruitment support, payroll administration, HR consulting, onboarding support, and customized workforce solutions for growing teams.
               </p>
               <div className="gold-line w-16 mx-auto mt-4" />
             </div>

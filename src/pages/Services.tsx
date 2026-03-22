@@ -17,6 +17,10 @@ import {
   HeartPulse,
   ShoppingBag,
   Plane,
+  Truck,
+  GraduationCap,
+  Building,
+  Globe2,
 } from "lucide-react";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
@@ -78,6 +82,10 @@ const sectorIcons = {
   hospitals: HeartPulse,
   retailers: ShoppingBag,
   aviation: Plane,
+  logistics: Truck,
+  education: GraduationCap,
+  "real-estate": Building,
+  gulf: Globe2,
 };
 
 type PartnerCompany = {
@@ -126,7 +134,7 @@ const Services = () => {
               <span className="text-gradient-gold block mt-2">Tailored For You</span>
             </h1>
             <p className="text-lg text-primary-foreground/70 mt-6 max-w-xl leading-relaxed">
-              From executive search and staffing to payroll management and compliance support, we offer practical HR services designed to strengthen hiring outcomes and workforce performance.
+              From executive search and domestic staffing to overseas hiring support, payroll management, and compliance support, we offer practical HR services designed to strengthen hiring outcomes and workforce performance.
             </p>
           </motion.div>
         </div>
@@ -137,7 +145,7 @@ const Services = () => {
           <Reveal>
             <div className="text-center max-w-3xl mx-auto mb-14">
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Primeaxis HR Solutions supports employers with permanent recruitment, contract staffing, HR consulting, payroll processing, compliance advisory, and workforce planning for fast-growing teams.
+                Primeaxis HR Solutions supports employers with permanent recruitment, contract staffing, domestic hiring campaigns, overseas hiring support, HR consulting, payroll processing, compliance advisory, and workforce planning for fast-growing teams.
               </p>
             </div>
           </Reveal>
@@ -173,7 +181,7 @@ const Services = () => {
               <span className="text-gold font-semibold text-sm tracking-widest uppercase">Our Process</span>
               <h2 className="text-3xl md:text-5xl font-display font-bold mt-3">How We Deliver Results</h2>
               <p className="text-primary-foreground/70 text-lg mt-5 leading-relaxed">
-                Every engagement is designed to reduce time-to-hire, improve candidate quality, and create a smoother HR experience for employers and employees alike.
+                Every engagement is designed to reduce time-to-hire, improve candidate quality, and create a smoother HR experience for employers and employees alike across domestic and international hiring mandates.
               </p>
               <div className="gold-line w-16 mx-auto mt-4" />
             </div>
@@ -207,7 +215,7 @@ const Services = () => {
                 Trusted Across Every Major Industry
               </h2>
               <p className="text-muted-foreground text-lg mt-5 leading-relaxed">
-                We support hiring across IT, non-IT enterprises, manufacturing, oil and gas, hospitals, retail, and aviation with strong partner relationships.
+                We support domestic and overseas hiring across IT, non-IT enterprises, manufacturing, oil and gas, hospitals, retail, aviation, logistics, education, real estate, and Gulf-region employers with strong partner relationships.
               </p>
               <div className="gold-line w-16 mx-auto mt-4" />
             </div>
@@ -273,7 +281,7 @@ const Services = () => {
               Let's Solve Your Hiring Challenges
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Tell us about your hiring requirements and we will craft a customized recruitment, staffing, payroll, or HR consulting solution that delivers measurable results.
+              Tell us about your hiring requirements and we will craft a customized domestic recruitment, overseas hiring, staffing, payroll, or HR consulting solution that delivers measurable results.
             </p>
             <Link
               to="/contact"
