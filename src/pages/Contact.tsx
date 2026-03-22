@@ -12,6 +12,17 @@ const contactInfo = [
   { icon: Clock, label: "Working Hours", value: "Mon - Sat: 9AM - 6PM", sub: "Consultations available by appointment" },
 ];
 
+const contactAudience = [
+  {
+    title: "For Clients",
+    description: "Share your hiring plans, urgent openings, expansion goals, or HR process needs. We help businesses with permanent staffing, contract staffing, executive search, payroll, and compliance support.",
+  },
+  {
+    title: "For Candidates",
+    description: "Tell us about your experience, preferred roles, and career goals. We connect professionals with opportunities that align with their strengths, growth plans, and industry background.",
+  },
+];
+
 const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({ name: "", email: "", company: "", phone: "", service: "", message: "" });
@@ -161,6 +172,21 @@ const Contact = () => {
                 Send Message <Send size={18} />
               </button>
             </form>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="section-padding bg-card/40">
+        <div className="max-w-6xl mx-auto">
+          <Reveal>
+            <div className="grid md:grid-cols-2 gap-8">
+              {contactAudience.map((item, i) => (
+                <div key={item.title} className="rounded-3xl bg-card border border-border/60 p-8 shadow-card">
+                  <p className="text-gold font-semibold text-sm tracking-widest uppercase mb-3">{item.title}</p>
+                  <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+                </div>
+              ))}
+            </div>
           </Reveal>
         </div>
       </section>

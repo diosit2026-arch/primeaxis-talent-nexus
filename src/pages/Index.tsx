@@ -54,6 +54,25 @@ const seoHighlights = [
   "Customized HR consulting for onboarding, retention, and workforce planning",
 ];
 
+const audienceContent = [
+  {
+    title: "For Employers",
+    points: [
+      "Find qualified candidates faster for leadership, technical, operational, and support roles.",
+      "Reduce hiring delays with structured screening, shortlisting, interview coordination, and onboarding support.",
+      "Strengthen workforce planning with staffing, payroll, compliance, and HR advisory services in one place.",
+    ],
+  },
+  {
+    title: "For Candidates",
+    points: [
+      "Get access to career opportunities with trusted employers across multiple industries.",
+      "Receive guidance on suitable roles, hiring expectations, and interview readiness.",
+      "Work with a recruitment partner that values long-term fit, growth potential, and professional success.",
+    ],
+  },
+];
+
 const sectorIcons = {
   it: Laptop2,
   "non-it": Landmark,
@@ -207,6 +226,42 @@ const Index = () => {
               </div>
             </div>
           </Reveal>
+        </div>
+      </section>
+
+      <section className="section-padding bg-background">
+        <div className="max-w-7xl mx-auto">
+          <Reveal>
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <span className="text-gold font-semibold text-sm tracking-widest uppercase">Who We Support</span>
+              <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mt-3">
+                Valuable For Clients
+                <span className="text-gradient-gold block mt-2">And Candidates</span>
+              </h2>
+              <p className="text-muted-foreground text-lg mt-5 leading-relaxed">
+                Primeaxis creates value on both sides of the hiring journey by helping employers build reliable teams and helping candidates connect with meaningful career opportunities.
+              </p>
+              <div className="gold-line w-16 mx-auto mt-4" />
+            </div>
+          </Reveal>
+
+          <div className="grid lg:grid-cols-2 gap-8">
+            {audienceContent.map((section, i) => (
+              <Reveal key={section.title} delay={i * 0.1} direction="up">
+                <div className="rounded-3xl border border-border/60 bg-card p-8 shadow-card h-full">
+                  <h3 className="font-display text-2xl font-bold text-foreground mb-6">{section.title}</h3>
+                  <div className="space-y-4">
+                    {section.points.map((point) => (
+                      <div key={point} className="flex items-start gap-3">
+                        <CheckCircle2 className="text-gold shrink-0 mt-0.5" size={20} />
+                        <p className="text-muted-foreground leading-relaxed">{point}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
