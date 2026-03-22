@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send, Clock, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Clock } from "lucide-react";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import { useToast } from "@/hooks/use-toast";
 
 const contactInfo = [
   { icon: Mail, label: "Email Us", value: "info@primeaxishr.com", sub: "We reply within 24 hours" },
-  { icon: Phone, label: "Call Us", value: "+1 (555) 123-4567", sub: "Mon-Fri 9AM-6PM EST" },
-  { icon: MapPin, label: "Visit Us", value: "350 Fifth Avenue, New York", sub: "NY 10118, USA" },
-  { icon: Clock, label: "Working Hours", value: "Mon - Fri: 9AM - 6PM", sub: "Weekend by appointment" },
+  { icon: Phone, label: "Call Us", value: "+91 9840570418", sub: "Mon-Sat 9AM-6PM IST" },
+  { icon: MapPin, label: "Visit Us", value: "Arihant Technopolis 131, Rajiv Gandhi Salai", sub: "Kandhanchavadi, Perungudi, Chennai, Tamil Nadu 600096" },
+  { icon: Clock, label: "Working Hours", value: "Mon - Sat: 9AM - 6PM", sub: "Consultations available by appointment" },
 ];
 
 const Contact = () => {
@@ -40,7 +40,7 @@ const Contact = () => {
               <span className="text-gradient-gold block mt-2">Conversation</span>
             </h1>
             <p className="text-lg text-primary-foreground/70 mt-6 max-w-xl leading-relaxed">
-              Whether you're hiring or exploring career opportunities, our team is here to help you succeed.
+              Whether you need permanent staffing, executive hiring, payroll support, or end-to-end HR solutions, our Chennai team is ready to help your business hire with confidence.
             </p>
           </motion.div>
         </div>
@@ -72,6 +72,9 @@ const Contact = () => {
           <Reveal>
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">Send Us a Message</h2>
+              <p className="text-muted-foreground mt-4 max-w-2xl mx-auto leading-relaxed">
+                Speak with Primeaxis HR Solutions about recruitment process outsourcing, contract staffing, payroll administration, HR consulting, onboarding support, and customized workforce solutions for growing teams.
+              </p>
               <div className="gold-line w-16 mx-auto mt-4" />
             </div>
           </Reveal>
@@ -115,7 +118,7 @@ const Contact = () => {
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:ring-2 focus:ring-ring focus:border-transparent outline-none transition-all"
-                    placeholder="+1 (555) 000-0000"
+                    placeholder="+91 98405 70418"
                   />
                 </div>
               </div>
@@ -129,11 +132,13 @@ const Contact = () => {
                 >
                   <option value="">Select a service</option>
                   <option>Executive Search</option>
+                  <option>Permanent Staffing</option>
                   <option>Staff Augmentation</option>
                   <option>HR Consulting</option>
                   <option>Compliance & Payroll</option>
                   <option>Contract Staffing</option>
                   <option>Workforce Analytics</option>
+                  <option>Recruitment Process Outsourcing</option>
                 </select>
               </div>
 

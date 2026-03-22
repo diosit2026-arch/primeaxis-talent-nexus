@@ -1,29 +1,28 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Target, Eye, Heart, Users, Award, Globe, ArrowRight } from "lucide-react";
+import { Target, Eye, Heart, Globe, ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import Counter from "@/components/Counter";
 
 const values = [
-  { icon: Target, title: "Precision", desc: "Every candidate is meticulously vetted to ensure the perfect cultural and technical fit." },
-  { icon: Eye, title: "Transparency", desc: "Clear communication and honest feedback throughout the entire recruitment journey." },
-  { icon: Heart, title: "Integrity", desc: "We build long-term relationships based on trust, respect, and ethical practices." },
-  { icon: Globe, title: "Global Reach", desc: "Access to a worldwide network of professionals across industries and geographies." },
+  { icon: Target, title: "Precision", desc: "Every candidate is carefully vetted to ensure the right cultural, functional, and long-term fit." },
+  { icon: Eye, title: "Transparency", desc: "Clear communication and honest guidance shape every stage of our recruitment and HR engagement model." },
+  { icon: Heart, title: "Integrity", desc: "We build long-term client and candidate relationships through trust, accountability, and ethical hiring practices." },
+  { icon: Globe, title: "Industry Reach", desc: "Our network spans IT, non-IT, manufacturing, healthcare, retail, aviation, and other growth-focused sectors." },
 ];
 
 const timeline = [
-  { year: "2009", title: "Founded", desc: "Primeaxis HR Solutions was born with a mission to revolutionize recruitment." },
-  { year: "2013", title: "500+ Placements", desc: "Reached our first major milestone serving clients across 5 industries." },
-  { year: "2017", title: "International Expansion", desc: "Opened offices in London, Dubai, and Singapore to serve global clients." },
-  { year: "2021", title: "AI-Powered Matching", desc: "Launched proprietary technology to enhance candidate-company matching." },
-  { year: "2024", title: "5000+ Placements", desc: "Celebrated placing over 5000 professionals with a 98% satisfaction rate." },
+  { year: "Nov 24, 2021", title: "Founded", desc: "Primeaxis HR Solutions was established to deliver practical recruitment and HR support for growing businesses." },
+  { year: "2022", title: "Growing Client Base", desc: "We built strong employer partnerships and delivered hiring success across multiple industries." },
+  { year: "2023", title: "Expanded Service Reach", desc: "Our offerings broadened to include deeper HR consulting, staffing support, and payroll coordination." },
+  { year: "2024", title: "Smarter Hiring", desc: "We strengthened our sourcing and matching workflows to improve hiring speed, quality, and fit." },
+  { year: "2025", title: "Trusted HR Partner", desc: "Primeaxis continued growing as a dependable recruitment and HR solutions partner for evolving workforce needs." },
 ];
 
 const About = () => {
   return (
     <Layout>
-      {/* Hero */}
       <section className="relative pt-32 pb-20 bg-gradient-hero overflow-hidden">
         <div className="absolute top-20 right-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
         <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
@@ -39,20 +38,19 @@ const About = () => {
               <span className="text-gradient-gold block mt-2">We Build Futures.</span>
             </h1>
             <p className="text-lg text-primary-foreground/70 mt-6 max-w-xl leading-relaxed">
-              Since 2009, Primeaxis has been the bridge between world-class talent and organizations that dare to lead.
+              Since November 24, 2021, Primeaxis has been helping businesses strengthen hiring, payroll, compliance, and workforce planning through dependable HR solutions and recruitment expertise.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Stats Band */}
       <section className="bg-card py-12 shadow-card relative -mt-2">
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { end: 5000, suffix: "+", label: "Professionals Placed" },
+            { end: 2000, suffix: "+", label: "Professionals Placed" },
             { end: 200, suffix: "+", label: "Client Companies" },
             { end: 20, suffix: "+", label: "Industries Served" },
-            { end: 4, label: "Global Offices" },
+            { end: 4, label: "Service Verticals" },
           ].map((s, i) => (
             <Reveal key={i} delay={i * 0.1}>
               <div className="text-center">
@@ -66,7 +64,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Mission */}
       <section className="section-padding bg-background">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -77,10 +74,10 @@ const About = () => {
                 <span className="text-gradient-gold"> Exceptional Talent</span>
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                We believe that the right people in the right roles can transform entire organizations. Our mission is to make that connection — swiftly, accurately, and with unwavering commitment to excellence.
+                We believe the right people in the right roles can transform entire organizations. Our mission is to make that connection swiftly, accurately, and with unwavering commitment to excellence.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Every candidate we present has been personally assessed by our industry experts. We don't rely on keyword matching — we understand the nuances of your culture, your challenges, and your aspirations.
+                Every candidate we present is assessed by experienced recruiters who understand role complexity, team fit, business context, and operational priorities. We go beyond keyword matching to deliver stronger hiring outcomes.
               </p>
             </Reveal>
             <Reveal direction="right">
@@ -98,13 +95,36 @@ const About = () => {
         </div>
       </section>
 
-      {/* Timeline */}
+      <section className="section-padding bg-card/40">
+        <div className="max-w-7xl mx-auto">
+          <Reveal>
+            <div className="grid lg:grid-cols-2 gap-12 items-start">
+              <div>
+                <span className="text-gold font-semibold text-sm tracking-widest uppercase">What We Support</span>
+                <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mt-3">
+                  Practical HR Solutions For
+                  <span className="text-gradient-gold block mt-2">Growing Organizations</span>
+                </h2>
+              </div>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  Primeaxis partners with employers that need reliable support for permanent staffing, executive search, contract hiring, payroll coordination, HR consulting, compliance processes, and employee onboarding.
+                </p>
+                <p>
+                  From Chennai to broader regional hiring mandates, we help organizations improve talent acquisition quality, reduce hiring delays, and create people processes that can scale with business growth.
+                </p>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="section-padding bg-gradient-navy text-primary-foreground">
         <div className="max-w-4xl mx-auto">
           <Reveal>
             <div className="text-center mb-16">
               <span className="text-gold font-semibold text-sm tracking-widest uppercase">Our Journey</span>
-              <h2 className="text-3xl md:text-5xl font-display font-bold mt-3">15+ Years of Excellence</h2>
+              <h2 className="text-3xl md:text-5xl font-display font-bold mt-3">Building Momentum Since 2021</h2>
               <div className="gold-line w-16 mx-auto mt-4" />
             </div>
           </Reveal>
@@ -128,7 +148,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="section-padding bg-background">
         <div className="max-w-3xl mx-auto text-center">
           <Reveal direction="scale">
@@ -136,7 +155,7 @@ const About = () => {
               Want to Partner With Us?
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Whether you're looking to hire or looking for your next career move, we'd love to hear from you.
+              Whether you're looking to hire, improve HR processes, or expand your workforce with confidence, we'd love to hear from you.
             </p>
             <Link
               to="/contact"

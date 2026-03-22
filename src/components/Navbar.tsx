@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import primeaxisLogo from "../assets/Primeaxislogo.png";
 
 const navLinks = [
   { label: "Home", path: "/" },
@@ -29,26 +30,25 @@ const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "glass shadow-card py-3" : "py-5"
+        scrolled ? "glass shadow-card py-1.5" : "py-2"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">
-            <span className="font-display font-bold text-accent-foreground text-lg">P</span>
-          </div>
-          <span className="font-display font-bold text-xl text-primary">
-            Prime<span className="text-gradient-gold">axis</span>
-          </span>
+      <div className="w-full max-w-none px-5 md:px-12 xl:px-20 flex items-center justify-between">
+        <Link to="/" className="flex items-center gap-2 shrink-0">
+          <img
+            src={primeaxisLogo}
+            alt="Primeaxis logo"
+            className="h-14 md:h-20 xl:h-24 w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-5">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
-              className={`relative font-medium text-sm tracking-wide transition-colors duration-300 ${
+              className={`relative font-medium text-sm transition-colors duration-300 ${
                 location.pathname === link.path
                   ? "text-accent"
                   : "text-muted-foreground hover:text-foreground"
@@ -65,7 +65,7 @@ const Navbar = () => {
           ))}
           <Link
             to="/contact"
-            className="ml-4 px-6 py-2.5 rounded-lg bg-accent text-accent-foreground font-semibold text-sm hover:brightness-110 transition-all duration-300 shadow-gold"
+            className="ml-2 px-4 py-1.5 rounded-lg bg-accent text-accent-foreground font-semibold text-sm hover:brightness-110 transition-all duration-300 shadow-gold"
           >
             Get Started
           </Link>

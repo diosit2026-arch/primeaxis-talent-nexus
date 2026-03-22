@@ -1,55 +1,111 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Users, Building2, TrendingUp, Award, CheckCircle2, Star, Briefcase, Target, Shield } from "lucide-react";
+import {
+  ArrowRight,
+  Users,
+  Building2,
+  TrendingUp,
+  Award,
+  CheckCircle2,
+  Shield,
+  Laptop2,
+  Landmark,
+  Factory,
+  Fuel,
+  HeartPulse,
+  ShoppingBag,
+  Plane,
+} from "lucide-react";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import Counter from "@/components/Counter";
 import heroBg from "@/assets/hero-bg.jpg";
+import partnerCompaniesData from "@/data/partnerCompanies.json";
+
+const LOGO_DEV_PUBLIC_KEY = "pk_SDrkBzplTaOo-uPGsE-FRg";
 
 const stats = [
-  { value: 5000, suffix: "+", label: "Candidates Placed" },
+  { value: 2000, suffix: "+", label: "Candidates Placed" },
   { value: 200, suffix: "+", label: "Partner Companies" },
   { value: 98, suffix: "%", label: "Client Satisfaction" },
-  { value: 15, suffix: "+", label: "Years Experience" },
+  { value: 5, suffix: "+", label: "Years Experience" },
 ];
 
 const services = [
-  { icon: Users, title: "Executive Search", desc: "We identify and recruit top-tier leadership talent that drives organizational transformation." },
-  { icon: Building2, title: "Staff Augmentation", desc: "Scale your workforce with pre-vetted professionals ready to contribute from day one." },
-  { icon: TrendingUp, title: "HR Consulting", desc: "Strategic HR advisory services that align your people strategy with business objectives." },
-  { icon: Shield, title: "Compliance & Payroll", desc: "End-to-end payroll management and regulatory compliance across jurisdictions." },
+  { icon: Users, title: "Executive Search", desc: "We identify senior leaders and specialized professionals who strengthen business performance and long-term growth." },
+  { icon: Building2, title: "Permanent & Contract Staffing", desc: "Scale quickly with pre-screened candidates for full-time, project-based, and contract hiring needs." },
+  { icon: TrendingUp, title: "HR Consulting", desc: "Build stronger people strategies with support for policy design, onboarding, performance management, and workforce planning." },
+  { icon: Shield, title: "Payroll & Compliance", desc: "Simplify payroll processing, statutory compliance, documentation, and employee lifecycle administration." },
 ];
 
 const whyUs = [
   "Industry-leading 98% placement success rate",
-  "Proprietary AI-powered candidate matching",
+  "Strong sourcing network across multiple business sectors",
   "Dedicated account managers for every client",
   "Transparent pricing with no hidden fees",
   "Pan-industry expertise across 20+ sectors",
   "Post-placement support for 12 months",
 ];
 
-const testimonials = [
-  { name: "Sarah Mitchell", role: "VP of HR, TechVista Inc.", quote: "Primeaxis transformed our hiring process. They delivered 3 senior engineers within 2 weeks — all exceptional.", stars: 5 },
-  { name: "James Rodriguez", role: "CEO, NexGen Solutions", quote: "The quality of candidates and speed of delivery is unmatched. Primeaxis is now our exclusive recruitment partner.", stars: 5 },
-  { name: "Anita Sharma", role: "Director, GlobalEdge Corp.", quote: "Their understanding of our culture fit requirements sets them apart. Every placement has been a perfect match.", stars: 5 },
+const seoHighlights = [
+  "Recruitment and staffing solutions for IT and non-IT businesses",
+  "Payroll management and HR compliance support for growing teams",
+  "Executive search and leadership hiring for critical roles",
+  "Customized HR consulting for onboarding, retention, and workforce planning",
 ];
+
+const sectorIcons = {
+  it: Laptop2,
+  "non-it": Landmark,
+  manufacturing: Factory,
+  "oil-gas": Fuel,
+  hospitals: HeartPulse,
+  retailers: ShoppingBag,
+  aviation: Plane,
+};
+
+type PartnerCompany = {
+  name: string;
+  slug: string;
+  domain?: string;
+  logo: {
+    assetPath: string | null;
+    url: string | null;
+    alt: string;
+  };
+};
+
+type PartnerSector = {
+  id: keyof typeof sectorIcons;
+  title: string;
+  companies: PartnerCompany[];
+};
+
+const partnerSectors = partnerCompaniesData.sectors as PartnerSector[];
+
+const getCompanyLogoSrc = (company: PartnerCompany) => {
+  if (company.logo.url) return company.logo.url;
+  if (company.logo.assetPath) return company.logo.assetPath;
+  if (company.domain) {
+    return `https://img.logo.dev/${company.domain}?token=${LOGO_DEV_PUBLIC_KEY}`;
+  }
+  return null;
+};
 
 const Index = () => {
   return (
     <Layout>
-      {/* Hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroBg} alt="Professional team" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-hero opacity-90" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 py-32">
+        <div className="relative z-10 w-full px-6 md:px-12 xl:px-16 py-32">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="max-w-3xl"
+            className="w-full max-w-6xl"
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 border border-accent/30 mb-8">
               <Award size={16} className="text-gold" />
@@ -59,8 +115,8 @@ const Index = () => {
               Building Teams That
               <span className="block text-gradient-gold mt-2">Shape The Future</span>
             </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/70 max-w-xl mb-10 leading-relaxed">
-              We connect exceptional talent with industry-leading organizations. Your next great hire is one conversation away.
+            <p className="text-lg md:text-xl text-primary-foreground/70 max-w-3xl mb-10 leading-relaxed">
+              Primeaxis HR Solutions delivers recruitment, staffing, payroll, and HR consulting services that help businesses in Chennai and across India hire exceptional talent with speed and confidence.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -78,12 +134,11 @@ const Index = () => {
             </div>
           </motion.div>
 
-          {/* Floating Stats */}
           <motion.div
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-4"
+            className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 w-full"
           >
             {stats.map((stat, i) => (
               <div key={i} className="glass rounded-xl p-6 text-center">
@@ -97,7 +152,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services */}
       <section className="section-padding bg-background">
         <div className="max-w-7xl mx-auto">
           <Reveal>
@@ -106,6 +160,9 @@ const Index = () => {
               <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mt-3">
                 End-to-End HR Solutions
               </h2>
+              <p className="text-muted-foreground text-lg mt-5 leading-relaxed">
+                From talent acquisition and executive search to payroll administration and HR advisory, we provide practical workforce solutions tailored to each stage of business growth.
+              </p>
               <div className="gold-line w-16 mx-auto mt-4" />
             </div>
           </Reveal>
@@ -126,7 +183,33 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Why Choose Us */}
+      <section className="section-padding bg-card/40">
+        <div className="max-w-7xl mx-auto">
+          <Reveal>
+            <div className="grid lg:grid-cols-2 gap-12 items-start">
+              <div>
+                <span className="text-gold font-semibold text-sm tracking-widest uppercase">HR Expertise</span>
+                <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mt-3">
+                  HR Services That Support
+                  <span className="text-gradient-gold block mt-2">Sustainable Growth</span>
+                </h2>
+                <p className="text-muted-foreground text-lg mt-6 leading-relaxed">
+                  Businesses rely on Primeaxis for fast hiring, better candidate quality, smoother onboarding, and dependable compliance support. Our team works closely with employers to reduce hiring delays, improve retention, and build efficient people operations.
+                </p>
+              </div>
+              <div className="space-y-4">
+                {seoHighlights.map((item, i) => (
+                  <div key={i} className="flex items-start gap-3 rounded-2xl bg-background p-5 shadow-card border border-border/60">
+                    <CheckCircle2 className="text-gold shrink-0 mt-0.5" size={20} />
+                    <p className="text-muted-foreground leading-relaxed">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="section-padding bg-gradient-navy text-primary-foreground">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -137,7 +220,7 @@ const Index = () => {
                 <span className="text-gradient-gold block">Recruitment Partner</span>
               </h2>
               <p className="text-primary-foreground/70 text-lg leading-relaxed mb-8">
-                With over 15 years of experience, we've perfected the art of matching exceptional talent with the right opportunities. Our process is transparent, efficient, and results-driven.
+                With 5+ years of experience, we support employers with executive hiring, permanent staffing, contract workforce planning, payroll coordination, and HR process improvement. Our process is transparent, efficient, and built around measurable hiring outcomes.
               </p>
               <Link
                 to="/about"
@@ -168,41 +251,74 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
       <section className="section-padding bg-background">
-        <div className="max-w-7xl mx-auto">
+        <div className="w-full px-6 md:px-12 xl:px-16">
           <Reveal>
-            <div className="text-center max-w-2xl mx-auto mb-16">
-              <span className="text-gold font-semibold text-sm tracking-widest uppercase">Testimonials</span>
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <span className="text-gold font-semibold text-sm tracking-widest uppercase">Partnered With Us</span>
               <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mt-3">
-                What Our Clients Say
+                Trusted Across Every Major Industry
               </h2>
+              <p className="text-muted-foreground text-lg mt-5 leading-relaxed">
+                We support hiring across IT, non-IT enterprises, manufacturing, oil and gas, hospitals, retail, and aviation with strong partner relationships.
+              </p>
               <div className="gold-line w-16 mx-auto mt-4" />
             </div>
           </Reveal>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((t, i) => (
-              <Reveal key={i} delay={i * 0.15} direction="scale">
-                <div className="bg-card rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-500 h-full flex flex-col">
-                  <div className="flex gap-1 mb-4">
-                    {Array.from({ length: t.stars }).map((_, j) => (
-                      <Star key={j} size={18} className="fill-gold text-gold" />
-                    ))}
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+            {partnerSectors.map((sector, i) => {
+              const SectorIcon = sectorIcons[sector.id] ?? Building2;
+
+              return (
+                <Reveal key={sector.title} delay={i * 0.08} direction="scale">
+                  <div className="bg-card rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-500 h-full border border-border/60">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center">
+                        <SectorIcon className="text-gold" size={28} />
+                      </div>
+                      <div>
+                        <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Industry</p>
+                        <h3 className="font-display font-semibold text-foreground text-xl">{sector.title}</h3>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-2 gap-4">
+                      {sector.companies.slice(0, 8).map((company) => {
+                        const logoSrc = getCompanyLogoSrc(company);
+
+                        return (
+                          <div
+                            key={company.slug}
+                            className="rounded-2xl border border-border/70 bg-background px-4 py-5 min-h-[92px] flex flex-col justify-center shadow-sm"
+                          >
+                            {logoSrc ? (
+                              <div className="h-10 mb-3 flex items-center">
+                                <img
+                                  src={logoSrc}
+                                  alt={company.logo.alt}
+                                  className="max-h-10 w-auto object-contain"
+                                  loading="lazy"
+                                  referrerPolicy="no-referrer"
+                                />
+                              </div>
+                            ) : (
+                              <div className="w-10 h-10 rounded-full bg-primary/5 text-primary font-display font-bold text-sm flex items-center justify-center mb-3">
+                                {company.name.slice(0, 2).toUpperCase()}
+                              </div>
+                            )}
+                            <p className="font-semibold text-foreground leading-tight">{company.name}</p>
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed italic flex-1">"{t.quote}"</p>
-                  <div className="mt-6 pt-6 border-t border-border">
-                    <p className="font-display font-semibold text-foreground">{t.name}</p>
-                    <p className="text-sm text-muted-foreground">{t.role}</p>
-                  </div>
-                </div>
-              </Reveal>
-            ))}
+                </Reveal>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
       <section className="section-padding">
         <div className="max-w-4xl mx-auto">
           <Reveal direction="scale">
@@ -215,7 +331,7 @@ const Index = () => {
                   <span className="text-gradient-gold block mt-2">Dream Team?</span>
                 </h2>
                 <p className="text-primary-foreground/70 text-lg max-w-xl mx-auto mb-8">
-                  Let's discuss your hiring needs. Our experts are ready to deliver exceptional talent within weeks.
+                  Let's discuss your hiring goals, role requirements, and workforce challenges. Our HR specialists are ready to deliver recruitment and staffing solutions that move your business forward.
                 </p>
                 <Link
                   to="/contact"

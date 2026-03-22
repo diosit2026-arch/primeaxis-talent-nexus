@@ -1,0 +1,1063 @@
+{
+  "meta": {
+    "version": 1,
+    "generatedFor": "Primeaxis partner companies dataset",
+    "currentCompanyCount": 105,
+    "targetSizeOptions": [
+      100,
+      500,
+      1000
+    ],
+    "logoStatus": "pending_assets_or_urls",
+    "notes": [
+      "This file is grouped by sector for the website partner section.",
+      "logo.assetPath and logo.url are intentionally null until real company logo assets or approved URLs are provided.",
+      "slug can be used later to map uploaded logo files automatically."
+    ]
+  },
+  "sectors": [
+    {
+      "id": "it",
+      "title": "IT Companies",
+      "companies": [
+        {
+          "name": "TCS",
+          "slug": "tcs",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "TCS logo"
+          },
+          "domain": "tcs.com"
+        },
+        {
+          "name": "Infosys",
+          "slug": "infosys",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Infosys logo"
+          },
+          "domain": "infosys.com"
+        },
+        {
+          "name": "Wipro",
+          "slug": "wipro",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Wipro logo"
+          },
+          "domain": "wipro.com"
+        },
+        {
+          "name": "HCLTech",
+          "slug": "hcltech",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "HCLTech logo"
+          },
+          "domain": "hcltech.com"
+        },
+        {
+          "name": "Tech Mahindra",
+          "slug": "tech-mahindra",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Tech Mahindra logo"
+          },
+          "domain": "techmahindra.com"
+        },
+        {
+          "name": "LTIMindtree",
+          "slug": "ltimindtree",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "LTIMindtree logo"
+          },
+          "domain": "ltimindtree.com"
+        },
+        {
+          "name": "Cognizant",
+          "slug": "cognizant",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Cognizant logo"
+          },
+          "domain": "cognizant.com"
+        },
+        {
+          "name": "Capgemini",
+          "slug": "capgemini",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Capgemini logo"
+          },
+          "domain": "capgemini.com"
+        },
+        {
+          "name": "Accenture",
+          "slug": "accenture",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Accenture logo"
+          }
+        },
+        {
+          "name": "IBM",
+          "slug": "ibm",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "IBM logo"
+          }
+        },
+        {
+          "name": "Oracle",
+          "slug": "oracle",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Oracle logo"
+          }
+        },
+        {
+          "name": "Microsoft",
+          "slug": "microsoft",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Microsoft logo"
+          }
+        },
+        {
+          "name": "Google",
+          "slug": "google",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Google logo"
+          }
+        },
+        {
+          "name": "Amazon Web Services",
+          "slug": "aws",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Amazon Web Services logo"
+          }
+        },
+        {
+          "name": "Zoho",
+          "slug": "zoho",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Zoho logo"
+          }
+        }
+      ]
+    },
+    {
+      "id": "non-it",
+      "title": "Non-IT Enterprises",
+      "companies": [
+        {
+          "name": "HDFC Bank",
+          "slug": "hdfc-bank",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "HDFC Bank logo"
+          },
+          "domain": "hdfcbank.com"
+        },
+        {
+          "name": "ICICI Bank",
+          "slug": "icici-bank",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "ICICI Bank logo"
+          },
+          "domain": "icicibank.com"
+        },
+        {
+          "name": "Axis Bank",
+          "slug": "axis-bank",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Axis Bank logo"
+          },
+          "domain": "axisbank.com"
+        },
+        {
+          "name": "Kotak Mahindra Bank",
+          "slug": "kotak-mahindra-bank",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Kotak Mahindra Bank logo"
+          },
+          "domain": "kotak.com"
+        },
+        {
+          "name": "State Bank of India",
+          "slug": "sbi",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "State Bank of India logo"
+          },
+          "domain": "sbi.co.in"
+        },
+        {
+          "name": "Aditya Birla Group",
+          "slug": "aditya-birla-group",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Aditya Birla Group logo"
+          },
+          "domain": "adityabirla.com"
+        },
+        {
+          "name": "Mahindra Group",
+          "slug": "mahindra-group",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Mahindra Group logo"
+          },
+          "domain": "mahindra.com"
+        },
+        {
+          "name": "Bajaj Finserv",
+          "slug": "bajaj-finserv",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Bajaj Finserv logo"
+          },
+          "domain": "bajajfinserv.in"
+        },
+        {
+          "name": "Reliance Industries",
+          "slug": "reliance-industries",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Reliance Industries logo"
+          }
+        },
+        {
+          "name": "Tata Capital",
+          "slug": "tata-capital",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Tata Capital logo"
+          }
+        },
+        {
+          "name": "LIC",
+          "slug": "lic",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "LIC logo"
+          }
+        },
+        {
+          "name": "Airtel",
+          "slug": "airtel",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Airtel logo"
+          }
+        },
+        {
+          "name": "Vodafone Idea",
+          "slug": "vodafone-idea",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Vodafone Idea logo"
+          }
+        },
+        {
+          "name": "Jio",
+          "slug": "jio",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Jio logo"
+          }
+        },
+        {
+          "name": "Bharti Enterprises",
+          "slug": "bharti-enterprises",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Bharti Enterprises logo"
+          }
+        }
+      ]
+    },
+    {
+      "id": "manufacturing",
+      "title": "Manufacturing Companies",
+      "companies": [
+        {
+          "name": "Larsen & Toubro",
+          "slug": "larsen-and-toubro",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Larsen & Toubro logo"
+          },
+          "domain": "larsentoubro.com"
+        },
+        {
+          "name": "Bosch",
+          "slug": "bosch",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Bosch logo"
+          },
+          "domain": "bosch.com"
+        },
+        {
+          "name": "Siemens",
+          "slug": "siemens",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Siemens logo"
+          },
+          "domain": "siemens.com"
+        },
+        {
+          "name": "ABB",
+          "slug": "abb",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "ABB logo"
+          },
+          "domain": "abb.com"
+        },
+        {
+          "name": "Schneider Electric",
+          "slug": "schneider-electric",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Schneider Electric logo"
+          },
+          "domain": "se.com"
+        },
+        {
+          "name": "Tata Steel",
+          "slug": "tata-steel",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Tata Steel logo"
+          },
+          "domain": "tatasteel.com"
+        },
+        {
+          "name": "JSW Steel",
+          "slug": "jsw-steel",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "JSW Steel logo"
+          },
+          "domain": "jsw.in"
+        },
+        {
+          "name": "Jindal Steel",
+          "slug": "jindal-steel",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Jindal Steel logo"
+          },
+          "domain": "jindalsteel.com"
+        },
+        {
+          "name": "Caterpillar",
+          "slug": "caterpillar",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Caterpillar logo"
+          }
+        },
+        {
+          "name": "Hitachi",
+          "slug": "hitachi",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Hitachi logo"
+          }
+        },
+        {
+          "name": "GE Vernova",
+          "slug": "ge-vernova",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "GE Vernova logo"
+          }
+        },
+        {
+          "name": "BHEL",
+          "slug": "bhel",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "BHEL logo"
+          }
+        },
+        {
+          "name": "Ashok Leyland",
+          "slug": "ashok-leyland",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Ashok Leyland logo"
+          }
+        },
+        {
+          "name": "Cummins",
+          "slug": "cummins",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Cummins logo"
+          }
+        },
+        {
+          "name": "3M",
+          "slug": "3m",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "3M logo"
+          }
+        }
+      ]
+    },
+    {
+      "id": "oil-gas",
+      "title": "Oil and Gas Companies",
+      "companies": [
+        {
+          "name": "ONGC",
+          "slug": "ongc",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "ONGC logo"
+          },
+          "domain": "ongcindia.com"
+        },
+        {
+          "name": "Indian Oil",
+          "slug": "indian-oil",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Indian Oil logo"
+          },
+          "domain": "iocl.com"
+        },
+        {
+          "name": "BPCL",
+          "slug": "bpcl",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "BPCL logo"
+          },
+          "domain": "bharatpetroleum.in"
+        },
+        {
+          "name": "HPCL",
+          "slug": "hpcl",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "HPCL logo"
+          },
+          "domain": "hindustanpetroleum.com"
+        },
+        {
+          "name": "Reliance Petroleum",
+          "slug": "reliance-petroleum",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Reliance Petroleum logo"
+          },
+          "domain": "ril.com"
+        },
+        {
+          "name": "Shell",
+          "slug": "shell",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Shell logo"
+          },
+          "domain": "shell.com"
+        },
+        {
+          "name": "Chevron",
+          "slug": "chevron",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Chevron logo"
+          },
+          "domain": "chevron.com"
+        },
+        {
+          "name": "ExxonMobil",
+          "slug": "exxonmobil",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "ExxonMobil logo"
+          },
+          "domain": "exxonmobil.com"
+        },
+        {
+          "name": "TotalEnergies",
+          "slug": "totalenergies",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "TotalEnergies logo"
+          }
+        },
+        {
+          "name": "SLB",
+          "slug": "slb",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "SLB logo"
+          }
+        },
+        {
+          "name": "Halliburton",
+          "slug": "halliburton",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Halliburton logo"
+          }
+        },
+        {
+          "name": "Baker Hughes",
+          "slug": "baker-hughes",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Baker Hughes logo"
+          }
+        },
+        {
+          "name": "Petrofac",
+          "slug": "petrofac",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Petrofac logo"
+          }
+        },
+        {
+          "name": "Cairn Oil & Gas",
+          "slug": "cairn-oil-gas",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Cairn Oil & Gas logo"
+          }
+        },
+        {
+          "name": "GAIL",
+          "slug": "gail",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "GAIL logo"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hospitals",
+      "title": "Hospitals",
+      "companies": [
+        {
+          "name": "Apollo Hospitals",
+          "slug": "apollo-hospitals",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Apollo Hospitals logo"
+          },
+          "domain": "apollohospitals.com"
+        },
+        {
+          "name": "Fortis Healthcare",
+          "slug": "fortis-healthcare",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Fortis Healthcare logo"
+          },
+          "domain": "fortishealthcare.com"
+        },
+        {
+          "name": "Aster DM Healthcare",
+          "slug": "aster-dm-healthcare",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Aster DM Healthcare logo"
+          },
+          "domain": "asterdmhealthcare.com"
+        },
+        {
+          "name": "Manipal Hospitals",
+          "slug": "manipal-hospitals",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Manipal Hospitals logo"
+          },
+          "domain": "manipalhospitals.com"
+        },
+        {
+          "name": "Max Healthcare",
+          "slug": "max-healthcare",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Max Healthcare logo"
+          },
+          "domain": "maxhealthcare.in"
+        },
+        {
+          "name": "Narayana Health",
+          "slug": "narayana-health",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Narayana Health logo"
+          },
+          "domain": "narayanahealth.org"
+        },
+        {
+          "name": "Medanta",
+          "slug": "medanta",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Medanta logo"
+          },
+          "domain": "medanta.org"
+        },
+        {
+          "name": "KIMS",
+          "slug": "kims",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "KIMS logo"
+          },
+          "domain": "kimshealth.org"
+        },
+        {
+          "name": "Rainbow Hospitals",
+          "slug": "rainbow-hospitals",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Rainbow Hospitals logo"
+          }
+        },
+        {
+          "name": "Yashoda Hospitals",
+          "slug": "yashoda-hospitals",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Yashoda Hospitals logo"
+          }
+        },
+        {
+          "name": "Care Hospitals",
+          "slug": "care-hospitals",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Care Hospitals logo"
+          }
+        },
+        {
+          "name": "Global Hospitals",
+          "slug": "global-hospitals",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Global Hospitals logo"
+          }
+        },
+        {
+          "name": "Artemis Hospitals",
+          "slug": "artemis-hospitals",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Artemis Hospitals logo"
+          }
+        },
+        {
+          "name": "Sunshine Hospitals",
+          "slug": "sunshine-hospitals",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Sunshine Hospitals logo"
+          }
+        },
+        {
+          "name": "Continental Hospitals",
+          "slug": "continental-hospitals",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Continental Hospitals logo"
+          }
+        }
+      ]
+    },
+    {
+      "id": "retailers",
+      "title": "Retailers",
+      "companies": [
+        {
+          "name": "Reliance Retail",
+          "slug": "reliance-retail",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Reliance Retail logo"
+          },
+          "domain": "relianceretail.com"
+        },
+        {
+          "name": "DMart",
+          "slug": "dmart",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "DMart logo"
+          },
+          "domain": "dmartindia.com"
+        },
+        {
+          "name": "Lulu Hypermarket",
+          "slug": "lulu-hypermarket",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Lulu Hypermarket logo"
+          },
+          "domain": "luluhypermarket.com"
+        },
+        {
+          "name": "Spencer's",
+          "slug": "spencers",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Spencer's logo"
+          },
+          "domain": "spencersretail.com"
+        },
+        {
+          "name": "Big Bazaar",
+          "slug": "big-bazaar",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Big Bazaar logo"
+          },
+          "domain": "bigbazaar.com"
+        },
+        {
+          "name": "More Retail",
+          "slug": "more-retail",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "More Retail logo"
+          },
+          "domain": "moreretail.in"
+        },
+        {
+          "name": "Star Bazaar",
+          "slug": "star-bazaar",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Star Bazaar logo"
+          },
+          "domain": "starbazaar.in"
+        },
+        {
+          "name": "Metro Cash & Carry",
+          "slug": "metro-cash-and-carry",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Metro Cash & Carry logo"
+          },
+          "domain": "metro-wholesale.com"
+        },
+        {
+          "name": "Shoppers Stop",
+          "slug": "shoppers-stop",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Shoppers Stop logo"
+          }
+        },
+        {
+          "name": "Lifestyle",
+          "slug": "lifestyle",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Lifestyle logo"
+          }
+        },
+        {
+          "name": "Westside",
+          "slug": "westside",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Westside logo"
+          }
+        },
+        {
+          "name": "Pantaloons",
+          "slug": "pantaloons",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Pantaloons logo"
+          }
+        },
+        {
+          "name": "Myntra",
+          "slug": "myntra",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Myntra logo"
+          }
+        },
+        {
+          "name": "Flipkart",
+          "slug": "flipkart",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Flipkart logo"
+          }
+        },
+        {
+          "name": "Amazon",
+          "slug": "amazon",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Amazon logo"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aviation",
+      "title": "Aviation",
+      "companies": [
+        {
+          "name": "IndiGo",
+          "slug": "indigo",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "IndiGo logo"
+          },
+          "domain": "goindigo.in"
+        },
+        {
+          "name": "Air India",
+          "slug": "air-india",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Air India logo"
+          },
+          "domain": "airindia.com"
+        },
+        {
+          "name": "Akasa Air",
+          "slug": "akasa-air",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Akasa Air logo"
+          },
+          "domain": "akasaair.com"
+        },
+        {
+          "name": "SpiceJet",
+          "slug": "spicejet",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "SpiceJet logo"
+          },
+          "domain": "spicejet.com"
+        },
+        {
+          "name": "Vistara",
+          "slug": "vistara",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Vistara logo"
+          },
+          "domain": "airvistara.com"
+        },
+        {
+          "name": "Emirates",
+          "slug": "emirates",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Emirates logo"
+          },
+          "domain": "emirates.com"
+        },
+        {
+          "name": "Qatar Airways",
+          "slug": "qatar-airways",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Qatar Airways logo"
+          },
+          "domain": "qatarairways.com"
+        },
+        {
+          "name": "Etihad Airways",
+          "slug": "etihad-airways",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Etihad Airways logo"
+          },
+          "domain": "etihad.com"
+        },
+        {
+          "name": "Singapore Airlines",
+          "slug": "singapore-airlines",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Singapore Airlines logo"
+          }
+        },
+        {
+          "name": "Lufthansa",
+          "slug": "lufthansa",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Lufthansa logo"
+          }
+        },
+        {
+          "name": "British Airways",
+          "slug": "british-airways",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "British Airways logo"
+          }
+        },
+        {
+          "name": "AirAsia",
+          "slug": "airasia",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "AirAsia logo"
+          }
+        },
+        {
+          "name": "Delta Air Lines",
+          "slug": "delta-air-lines",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "Delta Air Lines logo"
+          }
+        },
+        {
+          "name": "United Airlines",
+          "slug": "united-airlines",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "United Airlines logo"
+          }
+        },
+        {
+          "name": "American Airlines",
+          "slug": "american-airlines",
+          "logo": {
+            "assetPath": null,
+            "url": null,
+            "alt": "American Airlines logo"
+          }
+        }
+      ]
+    }
+  ]
+}
