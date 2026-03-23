@@ -7,7 +7,7 @@ import { useToast } from "@/hooks/use-toast";
 
 const contactInfo = [
   { icon: Mail, label: "Email Us", value: "info@primeaxishr.com", sub: "We reply within 24 hours" },
-  { icon: Phone, label: "Call Us", value: "+91 9840570418", sub: "Mon-Sat 9AM-6PM IST" },
+  { icon: Phone, label: "Call Us", value: "+91 9047770900", sub: "Mon-Sat 9AM-6PM IST" },
   { icon: MapPin, label: "Visit Us", value: "Arihant Technopolis 131, Rajiv Gandhi Salai", sub: "Kandhanchavadi, Perungudi, Chennai, Tamil Nadu 600096" },
   { icon: Clock, label: "Working Hours", value: "Mon - Sat: 9AM - 6PM", sub: "Consultations available by appointment" },
 ];
@@ -129,7 +129,7 @@ const Contact = () => {
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:ring-2 focus:ring-ring focus:border-transparent outline-none transition-all"
-                    placeholder="+91 98405 70418"
+                    placeholder="+91 9047770900"
                   />
                 </div>
               </div>

@@ -44,7 +44,7 @@ const Footer = () => {
             <h4 className="font-display font-semibold mb-4 text-gold">Contact</h4>
             <div className="flex flex-col gap-3 text-sm text-primary-foreground/60">
               <div className="flex items-center gap-2"><Mail size={16} className="text-gold" /> info@primeaxishr.com</div>
-              <div className="flex items-center gap-2"><Phone size={16} className="text-gold" /> +91 9840570418</div>
+              <div className="flex items-center gap-2"><Phone size={16} className="text-gold" /> +91 9047770900</div>
               <div className="flex items-start gap-2"><MapPin size={16} className="text-gold mt-0.5 shrink-0" /> Arihant Technopolis 131, Rajiv Gandhi Salai, Kandhanchavadi, Perungudi, Chennai, Tamil Nadu 600096</div>
             </div>
           </div>
