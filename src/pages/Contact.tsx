@@ -8,7 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 const contactInfo = [
   { icon: Mail, label: "Email Us", value: "info@primeaxishr.com", sub: "We reply within 24 hours" },
   { icon: Phone, label: "Call Us", value: "+91 9047770900", sub: "Mon-Sat 9AM-6PM IST" },
-  { icon: MapPin, label: "Visit Us", value: "Arihant Technopolis 131, Rajiv Gandhi Salai", sub: "Kandhanchavadi, Perungudi, Chennai, Tamil Nadu 600096" },
+  { icon: MapPin, label: "Visit Us", value: "HubFive - No 104, developed plots, Origin Building,2nd floor,North Wing", sub: "Industrial Estate, Perungudi, Chennai, Tamil Nadu 600096" },
   { icon: Clock, label: "Working Hours", value: "Mon - Sat: 9AM - 6PM", sub: "Consultations available by appointment" },
 ];
 
