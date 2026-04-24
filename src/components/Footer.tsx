@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import primeaxisLogo from "../assets/Primeaxislogo.png";
 
 const Footer = () => {
@@ -45,6 +45,10 @@ const Footer = () => {
             <div className="flex flex-col gap-3 text-sm text-primary-foreground/60">
               <div className="flex items-center gap-2"><Mail size={16} className="text-gold" /> info@primeaxishr.com</div>
               <div className="flex items-center gap-2"><Phone size={16} className="text-gold" /> +91 9047770900</div>
+              <div className="flex items-start gap-2">
+                <MapPin size={16} className="text-gold mt-0.5 shrink-0" />
+                <span>60, 2nd Main Rd, Phase-2, Thirumalai Nagar Annexe, Perungudi, Chennai, Tamil Nadu 600096</span>
+              </div>
             </div>
           </div>
         </div>
