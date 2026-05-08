@@ -8,25 +8,12 @@ import {
   Award,
   CheckCircle2,
   Shield,
-  Laptop2,
-  Landmark,
-  Factory,
-  Fuel,
-  HeartPulse,
-  ShoppingBag,
-  Plane,
-  Truck,
-  GraduationCap,
-  Building,
-  Globe2,
 } from "lucide-react";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import Counter from "@/components/Counter";
-import heroBg from "@/assets/hero-bg.jpg";
-import partnerCompaniesData from "@/data/partnerCompanies.json";
-
-const LOGO_DEV_PUBLIC_KEY = "pk_SDrkBzplTaOo-uPGsE-FRg";
+import IndustryShowcase from "@/components/IndustryShowcase";
+import heroVideo from "@/assets/7692918-hd_1920_1080_25fps.mp4";
 
 const stats = [
   { value: 2000, suffix: "+", label: "Candidates Placed" },
@@ -36,9 +23,9 @@ const stats = [
 ];
 
 const services = [
-  { icon: Users, title: "Executive Search", desc: "We identify senior leaders and specialized professionals who strengthen business performance and long-term growth." },
-  { icon: Building2, title: "Permanent & Contract Staffing", desc: "Scale quickly with pre-screened candidates for full-time, project-based, and contract hiring needs." },
-  { icon: TrendingUp, title: "HR Consulting", desc: "Build stronger people strategies with support for policy design, onboarding, performance management, and workforce planning." },
+  { icon: Users, title: "Executive Search", slug: "executive-search", desc: "We identify senior leaders and specialized professionals who strengthen business performance and long-term growth." },
+  { icon: Building2, title: "Permanent & Contract Staffing", slug: "permanent-staffing", desc: "Scale quickly with pre-screened candidates for full-time, project-based, and contract hiring needs." },
+  { icon: TrendingUp, title: "HR Consulting", slug: "hr-consulting", desc: "Build stronger people strategies with support for policy design, onboarding, performance management, and workforce planning." },
   { icon: Shield, title: "Payroll & Compliance", desc: "Simplify payroll processing, statutory compliance, documentation, and employee lifecycle administration." },
 ];
 
@@ -77,55 +64,20 @@ const audienceContent = [
   },
 ];
 
-const sectorIcons = {
-  it: Laptop2,
-  "non-it": Landmark,
-  manufacturing: Factory,
-  "oil-gas": Fuel,
-  hospitals: HeartPulse,
-  retailers: ShoppingBag,
-  aviation: Plane,
-  logistics: Truck,
-  education: GraduationCap,
-  "real-estate": Building,
-  gulf: Globe2,
-};
-
-type PartnerCompany = {
-  name: string;
-  slug: string;
-  domain?: string;
-  logo: {
-    assetPath: string | null;
-    url: string | null;
-    alt: string;
-  };
-};
-
-type PartnerSector = {
-  id: keyof typeof sectorIcons;
-  title: string;
-  companies: PartnerCompany[];
-};
-
-const partnerSectors = partnerCompaniesData.sectors as PartnerSector[];
-
-const getCompanyLogoSrc = (company: PartnerCompany) => {
-  if (company.logo.url) return company.logo.url;
-  if (company.logo.assetPath) return company.logo.assetPath;
-  if (company.domain) {
-    return `https://img.logo.dev/${company.domain}?token=${LOGO_DEV_PUBLIC_KEY}`;
-  }
-  return null;
-};
-
 const Index = () => {
   return (
     <Layout>
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroBg} alt="Professional team" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-hero opacity-90" />
+          <video 
+            src={heroVideo} 
+            autoPlay 
+            muted 
+            loop 
+            playsInline
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/40" />
         </div>
         <div className="relative z-10 w-full px-6 md:px-12 xl:px-16 py-32">
           <motion.div
@@ -197,13 +149,19 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, i) => (
               <Reveal key={i} delay={i * 0.1} direction="up">
-                <div className="card-3d bg-card rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-500 h-full group">
+                <Link
+                  to={service.slug ? `/services/${service.slug}` : "/services"}
+                  className="card-3d block bg-card rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-500 h-full group"
+                >
                   <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
                     <service.icon className="text-gold" size={28} />
                   </div>
                   <h3 className="font-display font-semibold text-xl text-foreground mb-3">{service.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{service.desc}</p>
-                </div>
+                  <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-gold transition-all group-hover:gap-3">
+                    View Details <ArrowRight size={16} />
+                  </span>
+                </Link>
               </Reveal>
             ))}
           </div>
@@ -314,73 +272,10 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="section-padding bg-background">
-        <div className="w-full px-6 md:px-12 xl:px-16">
-          <Reveal>
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <span className="text-gold font-semibold text-sm tracking-widest uppercase">Partnered With Us</span>
-              <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mt-3">
-                Trusted Across Every Major Industry
-              </h2>
-              <p className="text-muted-foreground text-lg mt-5 leading-relaxed">
-                We support domestic and overseas hiring across IT, non-IT enterprises, manufacturing, oil and gas, hospitals, retail, aviation, and other international sectors with strong partner relationships.
-              </p>
-              <div className="gold-line w-16 mx-auto mt-4" />
-            </div>
-          </Reveal>
-
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
-            {partnerSectors.map((sector, i) => {
-              const SectorIcon = sectorIcons[sector.id] ?? Building2;
-
-              return (
-                <Reveal key={sector.title} delay={i * 0.08} direction="scale">
-                  <div className="bg-card rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-500 h-full border border-border/60">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center">
-                        <SectorIcon className="text-gold" size={28} />
-                      </div>
-                      <div>
-                        <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Industry</p>
-                        <h3 className="font-display font-semibold text-foreground text-xl">{sector.title}</h3>
-                      </div>
-                    </div>
-                    <div className="grid grid-cols-2 gap-4">
-                      {sector.companies.slice(0, 8).map((company) => {
-                        const logoSrc = getCompanyLogoSrc(company);
-
-                        return (
-                          <div
-                            key={company.slug}
-                            className="rounded-2xl border border-border/70 bg-background px-4 py-5 min-h-[92px] flex flex-col justify-center shadow-sm"
-                          >
-                            {logoSrc ? (
-                              <div className="h-10 mb-3 flex items-center">
-                                <img
-                                  src={logoSrc}
-                                  alt={company.logo.alt}
-                                  className="max-h-10 w-auto object-contain"
-                                  loading="lazy"
-                                  referrerPolicy="no-referrer"
-                                />
-                              </div>
-                            ) : (
-                              <div className="w-10 h-10 rounded-full bg-primary/5 text-primary font-display font-bold text-sm flex items-center justify-center mb-3">
-                                {company.name.slice(0, 2).toUpperCase()}
-                              </div>
-                            )}
-                            <p className="font-semibold text-foreground leading-tight">{company.name}</p>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
-                </Reveal>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+      <IndustryShowcase
+        title="What We Do Across Industries"
+        description="With IT and ITES hiring as a priority, we also support healthcare, logistics, BFSI, education, retail, infrastructure, telecom, and professional service teams with practical workforce solutions."
+      />
 
       <section className="section-padding">
         <div className="max-w-4xl mx-auto">
