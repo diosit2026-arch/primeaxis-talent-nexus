@@ -112,8 +112,8 @@ export default {
           "50%": { transform: "translateY(-12px)" },
         },
         "pulse-gold": {
-          "0%, 100%": { boxShadow: "0 0 0 0 hsl(40 85% 55% / 0.4)" },
-          "50%": { boxShadow: "0 0 0 20px hsl(40 85% 55% / 0)" },
+          "0%, 100%": { boxShadow: "0 0 0 0 hsl(181 100% 32% / 0.4)" },
+          "50%": { boxShadow: "0 0 0 20px hsl(181 100% 32% / 0)" },
         },
         "counter": {
           "0%": { opacity: "0", transform: "translateY(20px)" },

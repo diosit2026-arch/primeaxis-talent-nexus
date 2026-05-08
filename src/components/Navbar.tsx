@@ -12,6 +12,8 @@ const navLinks = [
   { label: "Contact", path: "/contact" },
 ];
 
+const axisColor = "#009fa3";
+
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -32,7 +34,7 @@ const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "glass shadow-card py-1.5" : "py-2"
+        scrolled ? "glass shadow-card py-1.5" : "border-b border-border/60 bg-background/90 py-2 backdrop-blur-sm"
       }`}
     >
       <div className="w-full max-w-none px-5 md:px-12 xl:px-20 flex items-center justify-between">
@@ -51,11 +53,11 @@ const Navbar = () => {
             const linkClasses = `relative font-medium text-sm transition-colors duration-300 ${
               scrolled
                 ? isActive
-                  ? "text-accent"
-                  : "text-foreground hover:text-accent"
+                  ? "text-[#009fa3]"
+                  : "text-foreground hover:text-[#009fa3]"
                 : isActive
-                ? "text-accent drop-shadow-lg"
-                : "text-white hover:text-accent drop-shadow-lg"
+                ? "text-[#009fa3]"
+                : "text-foreground hover:text-[#009fa3]"
             }`;
 
             if (link.path === "/services") {
@@ -67,14 +69,15 @@ const Navbar = () => {
                     {isActive && (
                       <motion.div
                         layoutId="nav-indicator"
-                        className="absolute -bottom-1 left-0 right-0 h-0.5 gold-line"
+                        className="absolute -bottom-1 left-0 right-0 h-0.5 rounded-full"
+                        style={{ backgroundColor: axisColor }}
                       />
                     )}
                   </Link>
                   <div className="invisible absolute left-1/2 top-full w-72 -translate-x-1/2 translate-y-2 rounded-xl border border-border/70 bg-card p-3 opacity-0 shadow-card transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
                     <Link
                       to="/services"
-                      className="mb-2 block rounded-lg px-4 py-3 text-sm font-semibold text-foreground hover:bg-accent/10 hover:text-gold"
+                      className="mb-2 block rounded-lg px-4 py-3 text-sm font-semibold text-foreground hover:bg-[#009fa3]/10 hover:text-[#009fa3]"
                     >
                       All Services
                     </Link>
@@ -82,7 +85,7 @@ const Navbar = () => {
                       <Link
                         key={service.slug}
                         to={`/services/${service.slug}`}
-                        className="block rounded-lg px-4 py-3 text-sm font-semibold text-foreground hover:bg-accent/10 hover:text-gold"
+                        className="block rounded-lg px-4 py-3 text-sm font-semibold text-foreground hover:bg-[#009fa3]/10 hover:text-[#009fa3]"
                       >
                         {service.navLabel}
                       </Link>
@@ -98,7 +101,8 @@ const Navbar = () => {
                 {isActive && (
                   <motion.div
                     layoutId="nav-indicator"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 gold-line"
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 rounded-full"
+                    style={{ backgroundColor: axisColor }}
                   />
                 )}
               </Link>
@@ -106,7 +110,7 @@ const Navbar = () => {
           })}
           <Link
             to="/contact"
-            className="ml-2 px-4 py-1.5 rounded-lg bg-accent text-accent-foreground font-semibold text-sm hover:brightness-110 transition-all duration-300 shadow-gold"
+            className="ml-2 px-4 py-1.5 rounded-lg bg-[#009fa3] text-white font-semibold text-sm transition-all duration-300 shadow-[0_4px_26px_-6px_rgba(0,159,163,0.45)] hover:bg-[#00888c]"
           >
             Get Started
           </Link>
@@ -118,7 +122,7 @@ const Navbar = () => {
           className={`md:hidden flex h-10 w-10 items-center justify-center rounded-lg border transition-colors ${
             scrolled
               ? "border-border bg-background text-foreground"
-              : "border-primary-foreground/25 bg-primary-foreground/10 text-primary-foreground"
+              : "border-border bg-background text-foreground"
           }`}
           aria-label="Toggle navigation menu"
         >
@@ -142,7 +146,7 @@ const Navbar = () => {
                     to={link.path}
                     className={`block py-3 px-4 rounded-lg font-medium transition-colors ${
                       (link.path === "/services" ? isServicesActive : location.pathname === link.path)
-                        ? "bg-accent text-accent-foreground"
+                        ? "bg-[#009fa3] text-white"
                         : "text-muted-foreground hover:text-foreground"
                     }`}
                   >
@@ -154,7 +158,7 @@ const Navbar = () => {
                         <Link
                           key={service.slug}
                           to={`/services/${service.slug}`}
-                          className="block rounded-lg px-4 py-2 text-sm font-semibold text-muted-foreground hover:bg-accent/10 hover:text-gold"
+                          className="block rounded-lg px-4 py-2 text-sm font-semibold text-muted-foreground hover:bg-[#009fa3]/10 hover:text-[#009fa3]"
                         >
                           {service.navLabel}
                         </Link>

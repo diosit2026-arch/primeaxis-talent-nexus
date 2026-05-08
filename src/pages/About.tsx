@@ -13,11 +13,9 @@ const values = [
 ];
 
 const timeline = [
-  { year: "Nov 24, 2021", title: "Founded", desc: "Primeaxis HR Solutions was established to deliver practical recruitment and HR support for growing businesses." },
-  { year: "2022", title: "Growing Client Base", desc: "We built strong employer partnerships and delivered hiring success across multiple industries." },
-  { year: "2023", title: "Expanded Service Reach", desc: "Our offerings broadened to include deeper HR consulting, staffing support, and payroll coordination." },
-  { year: "2024", title: "Smarter Hiring", desc: "We strengthened our sourcing and matching workflows to improve hiring speed, quality, and fit." },
-  { year: "2025", title: "Trusted HR Partner", desc: "Primeaxis continued growing as a dependable recruitment and HR solutions partner for evolving workforce needs." },
+  { year: "Nov 24, 2024", title: "Founded", desc: "Primeaxis HR Solutions was established to deliver practical recruitment and HR support for growing businesses." },
+  { year: "2025", title: "Growing Client Base", desc: "We built strong employer partnerships and delivered hiring success across multiple industries." },
+  { year: "Now", title: "Trusted HR Partner", desc: "Primeaxis continues growing as a dependable recruitment and HR solutions partner for evolving workforce needs." },
 ];
 
 const About = () => {
@@ -38,7 +36,7 @@ const About = () => {
               <span className="text-gradient-gold block mt-2">We Build Futures.</span>
             </h1>
             <p className="text-lg text-primary-foreground/70 mt-6 max-w-xl leading-relaxed">
-              Since November 24, 2021, Primeaxis has been helping businesses strengthen domestic hiring, overseas recruitment, payroll, compliance, and workforce planning through dependable HR solutions and recruitment expertise.
+              Since November 24, 2024, Primeaxis has been helping businesses strengthen domestic hiring, overseas recruitment, payroll, compliance, and workforce planning through dependable HR solutions and recruitment expertise.
             </p>
           </motion.div>
         </div>
@@ -124,7 +122,7 @@ const About = () => {
           <Reveal>
             <div className="text-center mb-16">
               <span className="text-gold font-semibold text-sm tracking-widest uppercase">Our Journey</span>
-              <h2 className="text-3xl md:text-5xl font-display font-bold mt-3">Building Momentum Since 2021</h2>
+              <h2 className="text-3xl md:text-5xl font-display font-bold mt-3">Building Momentum Since 2024</h2>
               <div className="gold-line w-16 mx-auto mt-4" />
             </div>
           </Reveal>

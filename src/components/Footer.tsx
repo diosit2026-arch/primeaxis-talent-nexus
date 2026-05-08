@@ -4,7 +4,7 @@ import primeaxisLogo from "../assets/Primeaxislogo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="border-t border-border/70 bg-[#f1faff] text-foreground">
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="md:col-span-1">
@@ -15,7 +15,7 @@ const Footer = () => {
                 className="h-24 md:h-28 w-auto object-contain"
               />
             </div>
-            <p className="text-primary-foreground/60 text-sm leading-relaxed">
+            <p className="text-muted-foreground text-sm leading-relaxed">
               Primeaxis HR Solutions helps businesses hire faster, build stronger teams, and streamline people operations with recruitment, staffing, payroll, and HR consulting support.
             </p>
           </div>
@@ -24,7 +24,7 @@ const Footer = () => {
             <h4 className="font-display font-semibold mb-4 text-gold">Quick Links</h4>
             <div className="flex flex-col gap-3">
               {["Home", "About", "Services", "Contact"].map((label) => (
-                <Link key={label} to={`/${label === "Home" ? "" : label.toLowerCase()}`} className="text-primary-foreground/60 hover:text-gold transition-colors text-sm">
+                <Link key={label} to={`/${label === "Home" ? "" : label.toLowerCase()}`} className="text-muted-foreground hover:text-gold transition-colors text-sm">
                   {label}
                 </Link>
               ))}
@@ -35,14 +35,14 @@ const Footer = () => {
             <h4 className="font-display font-semibold mb-4 text-gold">Services</h4>
             <div className="flex flex-col gap-3">
               {["Executive Search", "Permanent Staffing", "Payroll Management", "HR Consulting", "Contract Staffing"].map((s) => (
-                <span key={s} className="text-primary-foreground/60 text-sm">{s}</span>
+                <span key={s} className="text-muted-foreground text-sm">{s}</span>
               ))}
             </div>
           </div>
 
           <div>
             <h4 className="font-display font-semibold mb-4 text-gold">Contact</h4>
-            <div className="flex flex-col gap-3 text-sm text-primary-foreground/60">
+            <div className="flex flex-col gap-3 text-sm text-muted-foreground">
               <div className="flex items-center gap-2"><Mail size={16} className="text-gold" /> info@primeaxishr.com</div>
               <div className="flex items-center gap-2"><Phone size={16} className="text-gold" /> +91 9047770900</div>
               <div className="flex items-start gap-2">
@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/10 mt-12 pt-8 text-center text-primary-foreground/40 text-sm">
+        <div className="border-t border-border mt-12 pt-8 text-center text-muted-foreground text-sm">
           Copyright {new Date().getFullYear()} Primeaxis HR Solutions. All rights reserved.
         </div>
       </div>

@@ -24,30 +24,30 @@
     --muted: 220 15% 92%;
     --muted-foreground: 220 10% 46%;
 
-    --accent: 40 85% 55%;
-    --accent-foreground: 222 60% 10%;
+    --accent: 181 100% 32%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 220 15% 88%;
     --input: 220 15% 88%;
-    --ring: 40 85% 55%;
+    --ring: 181 100% 32%;
 
     --radius: 0.75rem;
 
-    --gold: 40 85% 55%;
-    --gold-light: 40 90% 70%;
-    --gold-dark: 38 80% 42%;
+    --gold: 181 100% 32%;
+    --gold-light: 181 65% 42%;
+    --gold-dark: 182 100% 27%;
     --navy: 222 60% 16%;
     --navy-light: 222 40% 28%;
     --navy-dark: 222 65% 10%;
     --slate-warm: 220 15% 50%;
 
-    --gradient-gold: linear-gradient(135deg, hsl(40 85% 55%), hsl(38 90% 65%));
+    --gradient-gold: linear-gradient(135deg, hsl(181 100% 32%), hsl(181 65% 42%));
     --gradient-navy: linear-gradient(135deg, hsl(222 60% 16%), hsl(222 65% 10%));
     --gradient-hero: linear-gradient(160deg, hsl(222 65% 10%) 0%, hsl(222 60% 16%) 40%, hsl(222 40% 28%) 100%);
-    --shadow-gold: 0 4px 30px -4px hsl(40 85% 55% / 0.3);
+    --shadow-gold: 0 4px 30px -4px hsl(181 100% 32% / 0.3);
     --shadow-card: 0 10px 40px -10px hsl(222 60% 16% / 0.08);
     --shadow-card-hover: 0 20px 60px -10px hsl(222 60% 16% / 0.15);
 
