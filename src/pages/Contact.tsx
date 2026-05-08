@@ -26,11 +26,41 @@ const contactAudience = [
 const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({ name: "", email: "", company: "", phone: "", service: "", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({ title: "Message Sent!", description: "We'll get back to you within 24 hours." });
-    setFormData({ name: "", email: "", company: "", phone: "", service: "", message: "" });
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("https://formspree.io/f/xaqvdvbl", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          _subject: "New contact form submission from Primeaxis HR Solutions",
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Unable to send message");
+      }
+
+      toast({ title: "Message Sent!", description: "We'll get back to you within 24 hours." });
+      setFormData({ name: "", email: "", company: "", phone: "", service: "", message: "" });
+    } catch {
+      toast({
+        title: "Message not sent",
+        description: "Please try again or contact us directly by email.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -167,9 +197,10 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="mt-8 w-full md:w-auto inline-flex items-center justify-center gap-2 px-10 py-4 rounded-lg bg-accent text-accent-foreground font-semibold text-lg hover:brightness-110 transition-all duration-300 shadow-gold"
+                disabled={isSubmitting}
+                className="mt-8 w-full md:w-auto inline-flex items-center justify-center gap-2 px-10 py-4 rounded-lg bg-accent text-accent-foreground font-semibold text-lg hover:brightness-110 transition-all duration-300 shadow-gold disabled:cursor-not-allowed disabled:opacity-70"
               >
-                Send Message <Send size={18} />
+                {isSubmitting ? "Sending..." : "Send Message"} <Send size={18} />
               </button>
             </form>
           </Reveal>
