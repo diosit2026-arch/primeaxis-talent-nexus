@@ -95,7 +95,7 @@ const Index = () => {
               <span className="block text-gradient-gold mt-2">Shape The Future</span>
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/70 max-w-3xl mb-10 leading-relaxed">
-              Primeaxis HR Solutions delivers domestic hiring, overseas recruitment support, staffing, payroll, and HR consulting services that help businesses in Chennai, across India, and in global markets hire exceptional talent with speed and confidence.
+              Primeaxis HR Solutions Private Limited delivers domestic hiring, overseas recruitment support, staffing, payroll, and HR consulting services that help businesses in Chennai, across India, and in global markets hire exceptional talent with speed and confidence.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link

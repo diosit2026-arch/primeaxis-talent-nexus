@@ -13,7 +13,7 @@ const values = [
 ];
 
 const timeline = [
-  { year: "Nov 24, 2024", title: "Founded", desc: "Primeaxis HR Solutions was established to deliver practical recruitment and HR support for growing businesses." },
+  { year: "Nov 24, 2024", title: "Founded", desc: "Primeaxis HR Solutions Private Limited was established to deliver practical recruitment and HR support for growing businesses." },
   { year: "2025", title: "Growing Client Base", desc: "We built strong employer partnerships and delivered hiring success across multiple industries." },
   { year: "Now", title: "Trusted HR Partner", desc: "Primeaxis continues growing as a dependable recruitment and HR solutions partner for evolving workforce needs." },
 ];

@@ -16,7 +16,10 @@ const Footer = () => {
               />
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Primeaxis HR Solutions helps businesses hire faster, build stronger teams, and streamline people operations with recruitment, staffing, payroll, and HR consulting support.
+              Primeaxis HR Solutions Private Limited helps businesses hire faster, build stronger teams, and streamline people operations with recruitment, staffing, payroll, and HR consulting support.
+            </p>
+            <p className="mt-3 text-muted-foreground text-sm">
+              CIN No: U78100TN2026PTC192995
             </p>
           </div>
 
@@ -54,7 +57,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-12 pt-8 text-center text-muted-foreground text-sm">
-          Copyright {new Date().getFullYear()} Primeaxis HR Solutions. All rights reserved.
+          <p>Copyright {new Date().getFullYear()} Primeaxis HR Solutions Private Limited. All rights reserved.</p>
         </div>
       </div>
     </footer>

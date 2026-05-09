@@ -42,7 +42,7 @@ const Contact = () => {
         },
         body: JSON.stringify({
           ...formData,
-          _subject: "New contact form submission from Primeaxis HR Solutions",
+          _subject: "New contact form submission from Primeaxis HR Solutions Private Limited",
         }),
       });
 
@@ -114,7 +114,7 @@ const Contact = () => {
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">Send Us a Message</h2>
               <p className="text-muted-foreground mt-4 max-w-2xl mx-auto leading-relaxed">
-                Speak with Primeaxis HR Solutions about recruitment process outsourcing, contract staffing, domestic hiring, overseas recruitment support, payroll administration, HR consulting, onboarding support, and customized workforce solutions for growing teams.
+                Speak with Primeaxis HR Solutions Private Limited about recruitment process outsourcing, contract staffing, domestic hiring, overseas recruitment support, payroll administration, HR consulting, onboarding support, and customized workforce solutions for growing teams.
               </p>
               <div className="gold-line w-16 mx-auto mt-4" />
             </div>

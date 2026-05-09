@@ -101,7 +101,7 @@ const Services = () => {
           <Reveal>
             <div className="text-center max-w-3xl mx-auto mb-14">
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Primeaxis HR Solutions supports employers with permanent recruitment, contract staffing, domestic hiring campaigns, overseas hiring support, HR consulting, payroll processing, compliance advisory, and workforce planning for fast-growing teams.
+                Primeaxis HR Solutions Private Limited supports employers with permanent recruitment, contract staffing, domestic hiring campaigns, overseas hiring support, HR consulting, payroll processing, compliance advisory, and workforce planning for fast-growing teams.
               </p>
             </div>
           </Reveal>
